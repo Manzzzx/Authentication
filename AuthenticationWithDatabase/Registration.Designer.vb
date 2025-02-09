@@ -33,6 +33,8 @@ Partial Class Registration
         lblExit = New Label()
         Panel1 = New Panel()
         PictureBox1 = New PictureBox()
+        Label = New Label()
+        txtName = New TextBox()
         Label5 = New Label()
         txtConfirmPassword = New TextBox()
         Panel1.SuspendLayout()
@@ -80,7 +82,7 @@ Partial Class Registration
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("FiraCode Nerd Font Mono", 7.875F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(661, 316)
+        Label3.Location = New Point(661, 331)
         Label3.Name = "Label3"
         Label3.Size = New Size(116, 25)
         Label3.TabIndex = 14
@@ -90,7 +92,7 @@ Partial Class Registration
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("FiraCode Nerd Font Mono", 7.875F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(661, 200)
+        Label2.Location = New Point(661, 241)
         Label2.Name = "Label2"
         Label2.Size = New Size(116, 25)
         Label2.TabIndex = 13
@@ -100,7 +102,7 @@ Partial Class Registration
         ' 
         txtPassword.Cursor = Cursors.IBeam
         txtPassword.Font = New Font("Segoe UI", 10F)
-        txtPassword.Location = New Point(661, 344)
+        txtPassword.Location = New Point(661, 359)
         txtPassword.Name = "txtPassword"
         txtPassword.Size = New Size(372, 43)
         txtPassword.TabIndex = 12
@@ -110,7 +112,7 @@ Partial Class Registration
         ' 
         txtUsername.Cursor = Cursors.IBeam
         txtUsername.Font = New Font("Segoe UI", 10F)
-        txtUsername.Location = New Point(661, 228)
+        txtUsername.Location = New Point(661, 269)
         txtUsername.Name = "txtUsername"
         txtUsername.Size = New Size(372, 43)
         txtUsername.TabIndex = 11
@@ -159,24 +161,43 @@ Partial Class Registration
         PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
         ' 
+        ' Label
+        ' 
+        Label.AutoSize = True
+        Label.Font = New Font("FiraCode Nerd Font Mono", 7.875F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label.Location = New Point(661, 150)
+        Label.Name = "Label"
+        Label.Size = New Size(64, 25)
+        Label.TabIndex = 21
+        Label.Text = "Nama"
+        ' 
+        ' txtName
+        ' 
+        txtName.Cursor = Cursors.IBeam
+        txtName.Font = New Font("Segoe UI", 10F)
+        txtName.Location = New Point(661, 178)
+        txtName.Name = "txtName"
+        txtName.Size = New Size(372, 43)
+        txtName.TabIndex = 20
+        ' 
         ' Label5
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("FiraCode Nerd Font Mono", 7.875F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(661, 431)
+        Label5.Location = New Point(661, 418)
         Label5.Name = "Label5"
         Label5.Size = New Size(259, 25)
-        Label5.TabIndex = 21
+        Label5.TabIndex = 23
         Label5.Text = "Konfirmasi Password"
         ' 
         ' txtConfirmPassword
         ' 
         txtConfirmPassword.Cursor = Cursors.IBeam
         txtConfirmPassword.Font = New Font("Segoe UI", 10F)
-        txtConfirmPassword.Location = New Point(661, 459)
+        txtConfirmPassword.Location = New Point(661, 446)
         txtConfirmPassword.Name = "txtConfirmPassword"
         txtConfirmPassword.Size = New Size(372, 43)
-        txtConfirmPassword.TabIndex = 20
+        txtConfirmPassword.TabIndex = 22
         txtConfirmPassword.UseSystemPasswordChar = True
         ' 
         ' Registration
@@ -186,6 +207,8 @@ Partial Class Registration
         ClientSize = New Size(1115, 758)
         Controls.Add(Label5)
         Controls.Add(txtConfirmPassword)
+        Controls.Add(Label)
+        Controls.Add(txtName)
         Controls.Add(Panel1)
         Controls.Add(lblExit)
         Controls.Add(btnRegis)
@@ -219,6 +242,8 @@ Partial Class Registration
     Friend WithEvents lblExit As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label As Label
+    Friend WithEvents txtName As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents txtConfirmPassword As TextBox
 End Class
